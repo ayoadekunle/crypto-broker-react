@@ -26,7 +26,7 @@ export const numberWithCommas = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-const Carousel = () => {
+const BannerCarousel = () => {
 
     const classes = useStyles();
     const { currency, symbol } = CryptoState();
@@ -96,4 +96,4 @@ const Carousel = () => {
     )
 }
 
-export default Carousel
+export default BannerCarousel

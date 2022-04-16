@@ -1,5 +1,5 @@
 import {
-    AppBar,
+    AppBar, Button,
     Container,
     createTheme,
     makeStyles,
@@ -9,7 +9,7 @@ import {
     Toolbar,
     Typography
 } from "@material-ui/core";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {CryptoState} from "../CryptoContext";
 
 const useStyles = makeStyles(() => ({
@@ -63,6 +63,11 @@ const Header = () => {
                             <MenuItem value={'USD'}>USD</MenuItem>
                             <MenuItem value={'INR'}>INR</MenuItem>
                         </Select>
+                        <Link to="/access-account">
+                            <Button variant="contained" style={{backgroundColor: "#EEBC1D"}}>
+                                Sign In
+                            </Button>
+                        </Link>
                     </Toolbar>
                 </Container>
             </AppBar>

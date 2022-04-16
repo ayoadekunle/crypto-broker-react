@@ -25,7 +25,7 @@ export function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-export default function CoinsTable() {
+const CoinsTable = () => {
     const [coins, setCoins] = useState([]);
     const [loading, setLoading] = useState(false);
     const [search, setSearch] = useState("");
@@ -210,3 +210,5 @@ export default function CoinsTable() {
         </ThemeProvider>
     );
 }
+
+export default CoinsTable;
